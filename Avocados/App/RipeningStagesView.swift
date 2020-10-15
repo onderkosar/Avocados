@@ -17,7 +17,7 @@ struct RipeningStagesView: View {
     }
 }
 
-// MARK: -PREVIEW
+// MARK: - PREVIEW
 struct RipeningStagesView_Previews: PreviewProvider {
     static var previews: some View {
         RipeningStagesView()

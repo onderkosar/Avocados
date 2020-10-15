@@ -19,6 +19,9 @@
 		95435BAD25389445003ACBD8 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95435BAC25389445003ACBD8 /* HeaderModel.swift */; };
 		95435BB025389497003ACBD8 /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95435BAF25389497003ACBD8 /* HeaderData.swift */; };
 		95435BB3253898EC003ACBD8 /* DishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95435BB2253898EC003ACBD8 /* DishesView.swift */; };
+		95435BB62538A752003ACBD8 /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95435BB52538A752003ACBD8 /* FactsView.swift */; };
+		95435BB92538AA1A003ACBD8 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95435BB82538AA1A003ACBD8 /* FactModel.swift */; };
+		95435BBC2538AA4A003ACBD8 /* FactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95435BBB2538AA4A003ACBD8 /* FactData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		95435BAC25389445003ACBD8 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
 		95435BAF25389497003ACBD8 /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
 		95435BB2253898EC003ACBD8 /* DishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesView.swift; sourceTree = "<group>"; };
+		95435BB52538A752003ACBD8 /* FactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsView.swift; sourceTree = "<group>"; };
+		95435BB82538AA1A003ACBD8 /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		95435BBB2538AA4A003ACBD8 /* FactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 			children = (
 				95435BA9253878F3003ACBD8 /* HeaderView.swift */,
 				95435BB2253898EC003ACBD8 /* DishesView.swift */,
+				95435BB52538A752003ACBD8 /* FactsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				95435BAC25389445003ACBD8 /* HeaderModel.swift */,
+				95435BB82538AA1A003ACBD8 /* FactModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				95435BAF25389497003ACBD8 /* HeaderData.swift */,
+				95435BBB2538AA4A003ACBD8 /* FactData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -203,7 +212,10 @@
 				95435BAD25389445003ACBD8 /* HeaderModel.swift in Sources */,
 				95435BB025389497003ACBD8 /* HeaderData.swift in Sources */,
 				95435BB3253898EC003ACBD8 /* DishesView.swift in Sources */,
+				95435BB92538AA1A003ACBD8 /* FactModel.swift in Sources */,
+				95435BB62538A752003ACBD8 /* FactsView.swift in Sources */,
 				95435BAA253878F3003ACBD8 /* HeaderView.swift in Sources */,
+				95435BBC2538AA4A003ACBD8 /* FactData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

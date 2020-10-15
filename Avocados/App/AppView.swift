@@ -40,7 +40,7 @@ struct AppView: View {
     }
 }
 
-// MARK: -PREVIEW
+// MARK: - PREVIEW
 struct AppView_Previews: PreviewProvider {
     static var previews: some View {
         AppView()

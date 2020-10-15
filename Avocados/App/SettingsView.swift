@@ -17,7 +17,7 @@ struct SettingsView: View {
     }
 }
 
-// MARK: -PREVIEW
+// MARK: - PREVIEW
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()

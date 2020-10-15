@@ -54,7 +54,7 @@ struct AvocadosView: View {
     }
 }
 
-// MARK: -PREVIEW
+// MARK: - PREVIEW
 struct AvocadosView_Previews: PreviewProvider {
     static var previews: some View {
         AvocadosView()
