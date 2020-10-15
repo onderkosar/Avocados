@@ -10,6 +10,9 @@ import SwiftUI
 struct RecipeCardView: View {
     // MARK: - PROPERTIES
     var recipe: Recipe
+    var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
+    
+    @State private var showModel: Bool = false
     
     // MARK: - BODY
     var body: some View {
@@ -47,32 +50,11 @@ struct RecipeCardView: View {
                     .foregroundColor(Color.gray)
                     .italic()
                 
-                //RATES
-                HStack(alignment: .center, spacing: 5) {
-                    ForEach(1...(recipe.rating), id: \.self) { _ in
-                        Image(systemName: "star.fill")
-                            .font(.body)
-                            .foregroundColor(Color.yellow)
-                    }
-                }
+                //RATING
+                RecipeRatingView(recipe: recipe)
                 
                 // COOKİNG
-                HStack(alignment: .center, spacing: 12) {
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "person.2")
-                        Text("Serves: \(recipe.serves)")
-                    }
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "clock")
-                        Text("Prep: \(recipe.preparation)")
-                    }
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "flame")
-                        Text("Cooking: \(recipe.cooking)")
-                    }
-                } //: HSTACK
-                .font(.footnote)
-                .foregroundColor(Color.gray)
+                RecipeCookingView(recipe: recipe)
                 
             }
             .padding()
@@ -81,6 +63,13 @@ struct RecipeCardView: View {
         .background(Color.white)
         .cornerRadius(12)
         .shadow(color: Color("ColorBlackTransparentLight"), radius: 8, x: 0, y: 0)
+        .onTapGesture {
+            self.hapticImpact.impactOccurred()
+            self.showModel = true
+        }
+        .sheet(isPresented: self.$showModel) {
+            RecipeDetailView(recipe: self.recipe)
+        }
     }
 }
 
